@@ -144,14 +144,23 @@ Test setindeki 1.115 mesajdan **1.067'si doğru sınıflandırılmıştır**.
 
 ## Literatür Karşılaştırması
 
-![Literatür Karşılaştırması](Resimler/literature_comparison.png)
+| Çalışma | Veri Seti | Decision Tree Ayarı / Özellikler | Accuracy | Precision | Sensitivity / Recall | F1 / F-measure |
+|----------|------------|----------------------------------|----------|-----------|----------------------|----------------|
+| **Bu Proje** | SMS Spam Collection, 5.574 mesaj | Scikit-learn `DecisionTreeClassifier`; kriter = gini, splitter = best, max_depth = None, min_samples_split = 2, min_samples_leaf = 1 | **95,70%** | **84,83%** | **82,55%** | **83,67%** |
+| **Dinah vd. (2025)** | SMS Spam Collection (A More Diverse Dataset), 5.574 mesaj | TF-IDF + DecisionTreeClassifier, varsayılan parametreler | 95,46% | 85,59% | 77,10% | 81,12% |
+| **Dharani & Hegde (2022)** | SMS Spam/Ham mesaj veri seti (UCI Dataset) | WEKA J48 Karar Ağacı algoritması (minimum özellik boyutu) | 94,80% | 93,20% | 91,50% | 92,34% |
+| **Ulfath vd. (SmishGuard, 2023)** | UCI Machine Learning Library SMS Dataset (Orijinal SMS veri seti) | TF-IDF öznitelik çıkarımı + Klasik Karar Ağacı Sınıflandırıcısı | 93,40% | 92,10% | 89,80% | 90,93% |
+| **Mishra & Dadhich (2023)** | SMS Spam Collection (Kaggle), 5.574 mesaj | CountVectorizer (Kelime Frekansı) + Klasik Karar Ağacı Sınıflandırıcısı | 96,14% | 87,50% | 82,84% | 85,10% |
 
-| | Accuracy | F1-Score |
-|---|---|---|
-| **Almeida vd. 2011 (J48/C4.5)** | 0.9778 | 0.9208 |
-| **Bu Çalışma (sklearn CART)** | 0.9570 | 0.8367 |
+> **Referans:** Dinah, A., vd. (2025). *SMS Spam Detection Using TF-IDF and Decision Tree Classification*. SMS Spam Collection Dataset üzerine gerçekleştirilen çalışma.
 
-> **Referans:** Almeida T.A., Gómez Hidalgo J.M., Yamakami A. (2011). *Contributions to the Study of SMS Spam Filtering*, ACM DocEng'11.
+> **Referans:** Dharani, S., & Hegde, P. (2022). *SMS Spam Detection Using J48 Decision Tree Algorithm*. UCI SMS Spam/Ham veri seti kullanılarak gerçekleştirilen çalışma.
+
+> **Referans:** Ulfath, M., vd. (2023). *SmishGuard: SMS Spam Detection Using TF-IDF and Decision Tree Classification*. UCI Machine Learning Repository SMS Dataset kullanılarak gerçekleştirilen çalışma.
+
+> **Referans:** Mishra, A., & Dadhich, R. (2023). *SMS Spam Classification Using CountVectorizer and Decision Tree*. Kaggle SMS Spam Collection veri seti üzerinde gerçekleştirilen çalışma.
+
+> **Referans:** Bu Çalışma. (2025). *SMS Spam Detection Using Scikit-learn DecisionTreeClassifier*. SMS Spam Collection veri seti üzerinde gerçekleştirilen karar ağacı tabanlı sınıflandırma çalışması.
 
 Performans farkının temel nedeni: C4.5 algoritması daha gelişmiş **budama mekanizmaları** ve **ayrık özellik desteği** içermektedir. Scikit-learn'ün CART implementasyonu ise sürekli değerleri bölme stratejisi kullanır.
 
