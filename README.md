@@ -38,7 +38,7 @@ Bu proje, kısa mesajların (SMS) spam ya da meşru (ham) olup olmadığını ot
 ### Sınıf Dağılımı
 
 <p align="center">
-  <img src="Resimler/eda_plots.png" width="600">
+  <img src="Resimler/eda_plots.png" width="800">
 </p>
 
 Spam mesajların ortalama uzunluğu **139 karakter** iken ham mesajlar ortalama **71 karakter**'de kalmaktadır. Bu belirgin fark, mesaj uzunluğunun sınıflandırmada önemli bir ipucu olduğuna işaret etmektedir.
@@ -111,7 +111,9 @@ Script çalıştırıldığında sırasıyla şunlar gerçekleşir:
 
 ### Değerlendirme Metrikleri
 
-![Değerlendirme Metrikleri](Resimler/metrics_bar.png)
+<p align="center">
+  <img src="Resimler/metrics_bar.png" width="600">
+</p>
 
 | Metrik | Skor |
 |---|---|
@@ -123,7 +125,9 @@ Script çalıştırıldığında sırasıyla şunlar gerçekleşir:
 
 ### Karmaşıklık Matrisi
 
-![Confusion Matrix](Resimler/confusion_matrix.png)
+<p align="center">
+  <img src="Resimler/confusion_matrix.png" width="500">
+</p>
 
 | | Tahmin: Ham | Tahmin: Spam |
 |---|---|---|
@@ -138,7 +142,9 @@ Test setindeki 1.115 mesajdan **1.067'si doğru sınıflandırılmıştır**.
 
 ### En Önemli 20 Özellik (TF-IDF Token)
 
-![Feature Importance](Resimler/feature_importance.png)
+<p align="center">
+  <img src="Resimler/feature_importance.png" width="650">
+</p>
 
 `txt`, `claim` ve `free` kelimeleri Gini safsızlığını en çok düşüren özellikler olarak öne çıkmaktadır.
 
