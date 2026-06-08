@@ -37,7 +37,9 @@ Bu proje, kısa mesajların (SMS) spam ya da meşru (ham) olup olmadığını ot
 
 ### Sınıf Dağılımı
 
-![Sınıf Dağılımı ve EDA](Resimler/eda_plots.png)
+<p align="center">
+  <img src="Resimler/eda_plots.png" width="600">
+</p>
 
 Spam mesajların ortalama uzunluğu **139 karakter** iken ham mesajlar ortalama **71 karakter**'de kalmaktadır. Bu belirgin fark, mesaj uzunluğunun sınıflandırmada önemli bir ipucu olduğuna işaret etmektedir.
 
