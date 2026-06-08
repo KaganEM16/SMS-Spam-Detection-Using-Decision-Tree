@@ -8,6 +8,7 @@
 ## 📋 İçindekiler
 
 - [Proje Hakkında](#proje-hakkında)
+- [Tanıtım Videosu](#tanıtım-videosu)
 - [Veri Seti](#veri-seti)
 - [Kullanılan Yöntem](#kullanılan-yöntem)
 - [Kurulum](#kurulum)
@@ -22,6 +23,12 @@
 ## Proje Hakkında
 
 Bu proje, kısa mesajların (SMS) spam ya da meşru (ham) olup olmadığını otomatik olarak sınıflandırmak amacıyla **Karar Ağacı (Decision Tree)** algoritmasını uygulamaktadır. Metin verileri TF-IDF yöntemiyle sayısal vektörlere dönüştürülmüş, model GridSearchCV ile optimize edilmiş ve çeşitli metriklerle değerlendirilmiştir.
+
+---
+
+## Tanıtım Videosu
+
+Projenin YouTube platformu üzerindeki tanıtım videosuna [bu linkten](https://www.youtube.com/watch?v=1KEQoyHF0iU&t=9s) ulaşabilirsiniz.
 
 ---
 
